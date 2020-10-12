@@ -1,3 +1,9 @@
+## Install
+
+```bash
+git clone https://github.com/SashaSarzh/InstagramDirectBomber.git
+```
+
 ### Features
 
 - Instagram direct bombing
