@@ -23,11 +23,11 @@ webbrowser.open('https://instagram.com/jidkiypuk2')
 
 nostop = 0
 
-accounts = input("Впиши сюда название своего текстового файла с аккаунтом(если нет, нажми Enter чтобы продолжить): ")
+accounts = input("Input here list of your account(If haven't type Enter): ")
 
 if not accounts:
-    username = input("Твой Логин: ")
-    password = input("Твой Пароль: ")
+    username = input("Your Login: ")
+    password = input("Your Password: ")
     api = InstagramAPI(username, password)
     api.login()
     istimes = 0
@@ -43,37 +43,37 @@ else:
     api.login()
     istimes = 0
 
-user = input("Ник жертвы: ")
+user = input("Victims nickname: ")
 
 url = "https://www.instagram.com/web/search/topsearch/?context=blended&query="+user+"&rank_token=0.3953592318270893&count=1"
 response = requests.get(url)
 respJSON = response.json()
 user_id = str( respJSON['users'][0].get("user").get("pk") )
 
-message = input("Сообщение которое вы хотите отправить: ")
+message = input("Text of message: ")
 
 if istimes == 0:
-    times = int(input("Сколько сообщений вы хотите отправить: "))
+    times = int(input("How many messages you want send: "))
 elif istimes == 1:
     times = NumberOfLine
 
-print("Вы хотите отправить бомбер ", times,"раз(а) ", user_id, "сообщением: ", message, ".")
-ask = input("Вы уверены что хотите  продолжить[y/n]:")
+print("You will use bomber ", times,"times ", user_id, "with message: ", message, ".")
+ask = input("Do you want continue[y/n]:")
 
 if ask == 'y':
-	print('Начинаю')
+	print('Starting..')
 elif ask == 'n':
-	print('Останавливаю скрипт')
+	print('Stopping..')
 	sys.exit()
 else:
-	print('Останавливаю скрипт')
+	print('Stopping')
 	sys.exit()
 
 
 while times > nostop:
     nostop = nostop + 1
     api.sendMessage(user_id,message)
-    print(nostop, ">> Отправлено", user, ": ", message)
+    print(nostop, ">> Send", user, ": ", message)
 
 
 
