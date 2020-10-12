@@ -38,7 +38,11 @@ python3 bomber.py
 
 ## Info
 
-Change in account.txt login:password to your details
+Change in account.txt: 
+```bash
+login:password
+``` 
+to your details
 
 
 ## Author
