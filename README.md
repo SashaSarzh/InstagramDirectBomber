@@ -10,13 +10,7 @@ git clone https://github.com/SashaSarzh/InstagramDirectBomber.git
 
 ## Before Running `bomber.py`
 
-
-* Windows and Linux:
-
-```bash
-pip3 install -r requirements.txt
-
-```
+Make sure that you have updated Operating System and Python 3.x
 
 ## Requirements
 
@@ -28,9 +22,25 @@ pip3 install -r requirements.txt
 * Windows :
 
 ```bash
+cd InstagramDirectBomber
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
 python bomber.py
 ```
 * Linux :
+
+```bash
+cd InstagramDirectBomber
+```
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ```bash
 python3 bomber.py
