@@ -21,6 +21,7 @@ pip3 install -r requirements.txt
 ## Requirements
 
 *  Python 3.x
+*  requests
 
 ## Run
 
