@@ -54,6 +54,7 @@ login:password
 ``` 
 to your details
 
+For better usage i recommend ConEmu for Windows
 
 ## Author
 
