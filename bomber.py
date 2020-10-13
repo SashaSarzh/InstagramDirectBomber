@@ -37,8 +37,8 @@ else:
     for line in f:
         NumberOfLine += 1
     username, password = line.split(':')
-    print ("Логин найден: ", username)
-    print ("Пароль найден: ********")
+    print ("Login found: ", username)
+    print ("Password found: ********")
     api = InstagramAPI(username, password)
     api.login()
     istimes = 0
