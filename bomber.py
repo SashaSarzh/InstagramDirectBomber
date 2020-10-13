@@ -16,7 +16,7 @@ print(Fore.GREEN + """
 ███████╗██║░╚███║██████╔╝░░░██║░░░╚════██║██████╦╝╚█████╔╝██║░╚═╝░██║██████╦╝██████╔╝██║░░██║
 ╚══════╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░░░░░░╚═╝╚═════╝░░╚════╝░╚═╝░░░░░╚═╝╚═════╝░╚═════╝░╚═╝░░╚═╝
 
-author: idontknowwhatiwilldo
+author: @SashaSarzh
 instagram: @jidkiypuk2\n """ + Style.RESET_ALL)
 
 webbrowser.open('https://instagram.com/jidkiypuk2')
@@ -49,6 +49,12 @@ url = "https://www.instagram.com/web/search/topsearch/?context=blended&query="+u
 response = requests.get(url)
 respJSON = response.json()
 user_id = str( respJSON['users'][0].get("user").get("pk") )
+
+while True:
+    if user == "niggvard" or user == "jidkiypuk2":
+        print("No no no")
+        sys.exit()
+    else: break
 
 message = input("Text of message: ")
 
