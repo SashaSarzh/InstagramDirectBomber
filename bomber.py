@@ -1,5 +1,6 @@
 from InstagramAPI import InstagramAPI
 from colorama import Fore, Back, Style
+import getpass
 import sys
 import webbrowser
 import time
@@ -27,7 +28,7 @@ accounts = input("Input here list of your account(If haven't type Enter): ")
 
 if not accounts:
     username = input("Your Login: ")
-    password = input("Your Password: ")
+    password = getpass.getpass()
     api = InstagramAPI(username, password)
     api.login()
     istimes = 0
@@ -64,7 +65,7 @@ elif istimes == 1:
     times = NumberOfLine
 
 print("You will use bomber ", times,"times ", user_id, "with message: ", message, ".")
-ask = input("Do you want continue[y/n]:")
+ask = input("Do you want continue[y/n]: ")
 
 if ask == 'y':
 	print('Starting..')
