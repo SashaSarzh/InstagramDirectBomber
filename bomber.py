@@ -20,8 +20,6 @@ print(Fore.GREEN + """
 author: @SashaSarzh
 instagram: @jidkiypuk2\n """ + Style.RESET_ALL)
 
-webbrowser.open('https://instagram.com/jidkiypuk2')
-
 nostop = 0
 
 accounts = input("Input here list of your account(If haven't type Enter): ")
