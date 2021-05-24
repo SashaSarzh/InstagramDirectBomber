@@ -58,6 +58,4 @@ For better usage i recommend ConEmu for Windows
 
 ## Author
 
-Instagram: @jidkiypuk2
-
 GitHub: @SashaSarzh
