@@ -10,7 +10,7 @@ git clone https://github.com/SashaSarzh/InstagramDirectBomber.git
 
 ## Before Running `bomber.py`
 
-Make sure that you have updated Operating System and Python 3.x
+Make sure that you have updated Python
 
 ## Requirements
 
@@ -53,8 +53,6 @@ Change in account.txt:
 login:password
 ``` 
 to your details
-
-For better usage i recommend ConEmu for Windows
 
 ## Author
 
